@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dzmitry Shibinskiy - CV</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        margin: 0;
+        background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
+        color: #f0f0f0;
+        line-height: 1.6;
+    }
+    header {
+        background: linear-gradient(90deg, #ff4b2b, #ff416c);
+        color: white;
+        padding: 40px;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        animation: fadeInDown 1s ease;
+    }
+    header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        animation: fadeInUp 1s ease;
+    }
+    @keyframes fadeInDown {
+        from { transform: translateY(-20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInUp {
+        from { transform: translateY(20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+    nav {
+        text-align: center;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.05);
+        position: sticky;
+        top: 0;
+    }
+    nav a {
+        color: #ff416c;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    nav a:hover {
+        color: #ff4b2b;
+    }
+    section {
+        max-width: 900px;
+        margin: auto;
+        padding: 40px;
+    }
+    h2 {
+        border-left: 5px solid #ff416c;
+        padding-left: 10px;
+        margin-bottom: 15px;
+    }
+    .card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+        animation: fadeIn 0.8s ease;
+    }
+    .card:hover {
+        transform: scale(1.02);
+        background: rgba(255, 255, 255, 0.08);
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .timeline {
+        position: relative;
+        padding-left: 40px;
+    }
+    .timeline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 15px;
+        width: 2px;
+        height: 100%;
+        background: #ff416c;
+    }
+    .timeline-item {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: -3px;
+        top: 5px;
+        width: 12px;
+        height: 12px;
+        background: #ff4b2b;
+        border-radius: 50%;
+    }
+    .contact-form {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 20px;
+        border-radius: 10px;
+        animation: fadeIn 1s ease;
+    }
+    input, textarea, button {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 5px;
+    }
+    input, textarea {
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+    button {
+        background: #ff416c;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    button:hover {
+        background: #ff4b2b;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        margin-top: 40px;
+        font-size: 0.9rem;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Dzmitry Shibinskiy</h1>
+    <p>Visionary Product Executive | Telecom | Digital Solutions</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>Visionary product executive with over a decade of leadership in the telecom sector, delivering high-impact digital, mobile, and fintech solutions. Proven ability to scale product operations, drive end-to-end strategy, and lead cross-functional teams across B2C and B2B.</p>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experience Timeline</h2>
+    <div class="timeline">
+        <div class="timeline-item card">
+            <h3>Head of Tariffs and CVM Division - A1 Belarus</h3>
+            <p>July 2024 – Present | Strategic direction, lifecycle management, CVM framework, data-driven decision-making.</p>
+        </div>
+        <div class="timeline-item card">
+            <h3>Head of Tariffs and Products Division - A1 Belarus</h3>
+            <p>June 2022 – June 2024 | Product owner for My A1 app, fintech products, roadmap execution.</p>
+        </div>
+        <div class="timeline-item card">
+            <h3>Head of Product Development - A1 Belarus</h3>
+            <p>2017 – 2022 | Developed first convergent product, boosted internet subscriber growth.</p>
+        </div>
+        <div class="timeline-item card">
+            <h3>Senior Marketing Specialist - Garant</h3>
+            <p>2012 – 2017 | Market analysis, product strategies, B2C offerings launch.</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+        <ul>
+            <li>Product Strategy & Ownership</li>
+            <li>Tariff Management (B2C & B2B)</li>
+            <li>CVM Frameworks</li>
+            <li>Mobile App Leadership</li>
+            <li>Agile Team Leadership</li>
+            <li>Data-Driven Personalization</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-form">
+        <form action="mailto:shibinskyd@gmail.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Email</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Dzmitry Shibinskiy | <a href="mailto:shibinskyd@gmail.com" style="color:#ff416c;">Email Me</a></p>
+</footer>
+
+</body>
+</html>
