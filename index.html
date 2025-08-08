@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dzmitry Shibinskiy - CV</title>
 <style>
-    html {
-        scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
     body {
         font-family: 'Segoe UI', Tahoma, sans-serif;
         margin: 0;
@@ -21,23 +19,21 @@
         padding: 40px;
         text-align: center;
     }
+    header img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid white;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
     header h1 {
         font-size: 2.5rem;
         margin: 0;
-        animation: fadeInDown 1s ease;
     }
     header p {
         font-size: 1.2rem;
         opacity: 0.9;
-        animation: fadeInUp 1s ease;
-    }
-    @keyframes fadeInDown {
-        from { transform: translateY(-20px); opacity: 0; }
-        to { transform: translateY(0); opacity: 1; }
-    }
-    @keyframes fadeInUp {
-        from { transform: translateY(20px); opacity: 0; }
-        to { transform: translateY(0); opacity: 1; }
     }
     nav {
         text-align: center;
@@ -54,39 +50,16 @@
         font-weight: bold;
         transition: color 0.3s;
     }
-    nav a:hover {
-        color: #ff4b2b;
-    }
-    section {
-        max-width: 900px;
-        margin: auto;
-        padding: 40px;
-    }
-    h2 {
-        border-left: 5px solid #ff416c;
-        padding-left: 10px;
-        margin-bottom: 15px;
-    }
+    nav a:hover { color: #ff4b2b; }
+    section { max-width: 900px; margin: auto; padding: 40px; }
+    h2 { border-left: 5px solid #ff416c; padding-left: 10px; margin-bottom: 15px; }
     .card {
         background: rgba(255, 255, 255, 0.05);
         padding: 20px;
         border-radius: 10px;
         margin-bottom: 20px;
-        transition: transform 0.3s ease;
-        animation: fadeIn 0.8s ease;
     }
-    .card:hover {
-        transform: scale(1.02);
-        background: rgba(255, 255, 255, 0.08);
-    }
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-    .timeline {
-        position: relative;
-        padding-left: 40px;
-    }
+    .timeline { position: relative; padding-left: 40px; }
     .timeline::before {
         content: '';
         position: absolute;
@@ -96,10 +69,7 @@
         height: 100%;
         background: #ff416c;
     }
-    .timeline-item {
-        position: relative;
-        margin-bottom: 20px;
-    }
+    .timeline-item { position: relative; margin-bottom: 20px; }
     .timeline-item::before {
         content: '';
         position: absolute;
@@ -114,7 +84,6 @@
         background: rgba(255, 255, 255, 0.05);
         padding: 20px;
         border-radius: 10px;
-        animation: fadeIn 1s ease;
     }
     input, textarea, button {
         width: 100%;
@@ -123,10 +92,7 @@
         border: none;
         border-radius: 5px;
     }
-    input, textarea {
-        background: rgba(255, 255, 255, 0.1);
-        color: white;
-    }
+    input, textarea { background: rgba(255, 255, 255, 0.1); color: white; }
     button {
         background: #ff416c;
         color: white;
@@ -134,9 +100,7 @@
         cursor: pointer;
         transition: 0.3s;
     }
-    button:hover {
-        background: #ff4b2b;
-    }
+    button:hover { background: #ff4b2b; }
     footer {
         text-align: center;
         padding: 20px;
@@ -149,6 +113,7 @@
 <body>
 
 <header id="top">
+    <img src="your-photo.jpg" alt="Dzmitry Shibinskiy Photo">
     <h1>Dzmitry Shibinskiy</h1>
     <p>Visionary Product Executive | Telecom | Digital Solutions</p>
 </header>
@@ -156,6 +121,7 @@
 <nav>
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
 </nav>
@@ -186,6 +152,30 @@
             <h3>Senior Marketing Specialist - Garant</h3>
             <p>2012 – 2017 | Market analysis, product strategies, B2C offerings launch.</p>
         </div>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education & Courses</h2>
+    <div class="card">
+        <h3>Education</h3>
+        <p><strong>Bachelor's Degree in History</strong> - Gomel State University named after Francisk Skaryna, Gomel, Belarus<br>Sept 2004 – July 2009</p>
+        <p><strong>Professional Retraining in Marketing</strong> (based on prior higher education) - Marketing<br>Sept 2010 – July 2011</p>
+    </div>
+    <div class="card">
+        <h3>Courses</h3>
+        <ul>
+            <li>Microsoft, PowerPoint Practical Conference for IT Professionals - Sept 2017</li>
+            <li>Building Communication Skills and Navigating Effective Interactions - Aug 2018</li>
+            <li>Finances for Managers: How to Work with Numbers - Nov 2018</li>
+            <li>ICAgile, Certified Professional – Agile Product Ownership (ICP-APO) - Jan 2018 – Dec 2018</li>
+            <li>Product Ownership - Nov 2018</li>
+            <li>Effective Leadership - Oct 2021 – Nov 2022</li>
+            <li>Gopractice, Data-Based Product Management Simulator - Mar 2022 – Aug 2022</li>
+            <li>Agile Project & Delivery Management - Apr 2023 – Dec 2023</li>
+            <li>Skillbox, Digital-strategy - Apr 2024 – Feb 2025</li>
+            <li>Effective Meetings Training - Apr 2025</li>
+        </ul>
     </div>
 </section>
 
